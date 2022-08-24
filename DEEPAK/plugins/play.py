@@ -127,7 +127,7 @@ async def _(event):
 btnn =[
     [
      Button.url("Support", url=f"t.me/{Config.SUPPORT}"), Button.url("Updates", url=f"t.me/{Config.CHANNEL}")
-    ],
+    ]
     [
     ]
 

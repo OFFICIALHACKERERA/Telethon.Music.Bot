@@ -9,5 +9,5 @@ class Config(object):
     BOT_USERNAME = os.environ.get("BOT_USERNAME", "LOVE_PRO_VIKAS_OP_bot")
     SUPPORT = os.environ.get("SUPPORT", "LOVE_IS_LIFE_OP")
     CHANNEL = os.environ.get("CHANNEL", "OFFICIALHACKER789")
-    START_IMG = os.environ.get("START_IMG", "https://telegra.ph/file/35a7b5d9f1f2605c9c0d3.png")
-    CMD_IMG = os.environ.get("CMD_IMG", "https://telegra.ph/file/66518ed54301654f0b126.png")
+    START_IMG = os.environ.get("START_IMG", "https://telegra.ph/file/3b2725c0e95f759e3b444.jpg")
+    CMD_IMG = os.environ.get("CMD_IMG", "https://telegra.ph/file/3b2725c0e95f759e3b444.jpg")

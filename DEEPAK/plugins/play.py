@@ -152,7 +152,7 @@ async def play(event):
     ):
         return await event.client.send_file(chat_id, Config.CMD_IMG, caption="**Give Me Your Query Which You want to Play**\n\n **Example**: `/play Kali kar hai `", buttons=btnn)
     elif replied and not replied.audio and not replied.voice or not replied:
-        botman = await event.reply("`Featching Details...`")
+        botman = await event.reply("`🔱 Processing...Please wait`")
         query = event.text.split(maxsplit=1)[1]
         search = ytsearch(query)
         if search == 0:
@@ -194,7 +194,7 @@ async def play(event):
                         stream_type=StreamType().pulse_stream,
                     )
                     add_to_queue(chat_id, songname, ytlink, url, "Audio", 0)
-                    caption = f"🏷 **Name:** [{songname}]({url})\n**⏱ Duration:** `{duration}`\n💡 **Status:** `Playing`\n🎧 **Requester:** {from_user}"
+                    caption = f"🌹 **Name:** [{songname}]({url})\n**⏱ Duration:** `{duration}`\n💡 **Status:** `Playing`\n🎧 **Requester:** {from_user}"
                     await botman.delete()
                     await event.client.send_file(chat_id, thumb, caption=caption, buttons=btnn)
                 except Exception as ep:
@@ -278,7 +278,7 @@ async def vplay(event):
     ):
         return await event.client.send_file(chat_id, Config.CMD_IMG, caption="**Give Me Your Query Which You want to Stream**\n\n **Example**: `/vplay Nira Ishq Bass boosted`", buttons=btnn)
     if replied and not replied.video and not replied.document:
-        xnxx = await event.reply("`Searching Video Details...`")
+        xnxx = await event.reply("`🔱 Processing...Please wait`")
         query = event.text.split(maxsplit=1)[1]
         search = ytsearch(query)
         RESOLUSI = 720
@@ -323,7 +323,7 @@ async def vplay(event):
                         RESOLUSI)
                     await xnxx.delete()
                     await event.client.send_file(event.chat_id,
-                        f"**🏷 **__Video Streaming Started__**:** [{songname}]({url})\n**⏱ Duration:** `{duration}`\n💡 **Status:** `Playing`\n🎧 **Requested:** {from_user}, buttons=btnn",
+                        f"**👍 **__Video Streaming Started__**:** [{songname}]({url})\n**⏱ Duration:** `{duration}`\n💡 **Status:** `Playing`\n🎧 **Requested:** {from_user}, buttons=btnn",
                         link_preview=False,
                     )
                 except Exception as ep:
